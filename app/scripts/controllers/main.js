@@ -2,16 +2,13 @@
 
 /**
  * @ngdoc function
- * @name ukhacksApp.controller:MainCtrl
+ * @name ukhacksApp.controller:MainController
  * @description
  * # MainCtrl
  * Controller of the ukhacksApp
  */
 angular.module('ukhacksApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MainController', function ($scope, $rootScope) {
+    $scope.test = 'test';
+    console.log($rootScope);
   });

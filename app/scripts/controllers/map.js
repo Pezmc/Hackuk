@@ -8,10 +8,5 @@
  * Controller of the ukhacksApp
  */
 angular.module('ukhacksApp')
-  .controller('AboutController', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+  .controller('MapController', function () {
   });

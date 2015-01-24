@@ -1,23 +1,17 @@
-<div class="jumbotron">
-  <h1>'Allo, 'Allo!</h1>
-  <p class="lead">
-    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
-    Always a pleasure scaffolding your apps.
-  </p>
-  <p><a class="btn btn-lg btn-success" ng-href="#">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
-</div>
-
-<div class="row marketing">
-  <h4>HTML5 Boilerplate</h4>
-  <p>
-    HTML5 Boilerplate is a professional front-end template for building fast, robust, and adaptable web apps or sites.
-  </p>
-
-  <h4>Angular</h4>
-  <p>
-    AngularJS is a toolset for building the framework most suited to your application development.
-  </p>
-
-  <h4>Karma</h4>
-  <p>Spectacular Test Runner for JavaScript.</p>
+<div class="row">
+    <div class="col-md-4 col-sm-6 portfolio-item" ng-repeat="hack in $root.hacks">
+        <a href="#">
+            <img class="img-responsive" src="http://placehold.it/700x400" alt="">
+        </a>
+        <h3>
+            <span>{{ hack.name }}</span>
+        </h3>
+        <h5>
+          {{ hack.start | dateSuffix:'MMMM d'}} - {{ hack.end | dateSuffix:'d' }}
+        </h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+        <p>
+          <a href="{{ hack.url }}" target="_blank">Visit Website</a>
+        </p>
+    </div>
 </div>

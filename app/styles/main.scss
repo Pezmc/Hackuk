@@ -1,6 +1,5 @@
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 // bower:scss
-<<<<<<< HEAD
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
@@ -12,6 +11,14 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 // SCAFFOLDING
 // -----------------------------------------------------
+
+body {
+    padding-top: 70px; /* Required padding for .navbar-fixed-top. */
+}
+
+footer {
+    margin: 50px 0;
+}
 
 // NAVBAR
 // -----------------------------------------------------
@@ -49,11 +56,21 @@ div.subnav-fixed {
 // MISC
 // -----------------------------------------------------
 
-.hero-unit {
+.portfolio-item {
+    margin-bottom: 25px;
+}
 
-	h1, h2, h3, h4, h5, h6 {
-		margin: 13px 0;
-	}
+
+// ANIMATION
+// -----------------------------------------------------
+.animate-enter {
+	-webkit-transition: 1s linear all; /* Chrome */
+	transition: 1s linear all;
+	opacity: 0;
+}
+ 
+.animate-enter.animate-enter-active {
+	opacity: 1;
 }
 
 // MEDIA QUERIES
